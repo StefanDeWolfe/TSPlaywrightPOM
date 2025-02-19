@@ -14,6 +14,9 @@ dotenv.config({ path: path.resolve(__dirname, '.env') });
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
+  // Global Setup for environment variables.
+  globalSetup: 'utilities/globalSetup.ts',
+
   testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: true,

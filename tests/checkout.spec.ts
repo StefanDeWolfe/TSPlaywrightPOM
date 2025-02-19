@@ -8,8 +8,8 @@ import { CheckoutPageHeaders } from '../fixtures/constants';
 test.beforeEach(async ({ page }) => {
   const login = new LoginPage(page)
   const products = new ProductsPage(page)
-  const username = process.env.USER_NAME ?? "standard_user"
-  const password = process.env.PASSWORD ?? "secret_sauce"
+  const username = process.env.USER_NAME
+  const password = process.env.PASSWORD
   // Runs before each test and signs in each page.
   await login.goto();
   await login.login(username, password)
