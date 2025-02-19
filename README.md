@@ -8,9 +8,9 @@ https://www.saucedemo.com/
 Some comamnds to run to see if its working
 ```
 npx playwright test [test file]
-npx playwright test login.spec.js --project firefox --headed
-npx playwright test -g "login page visibile"
-npx playwright test -g "standard user login" --project firefox --headed
+npx playwright test login.spec.ts --project firefox --headed
+npx playwright test -g "Login as a standard user"
+npx playwright test -g "Login as a standard user" --project firefox --headed
 ```
 How I set this up (for future me).
 ```
